@@ -7,7 +7,8 @@ const initialState = {
     gameStage: STAGES[0],
     questions,
     currentQuestion: 0,
-}
+    score: 0,
+};
 //Possibilidade de mudar o estado
 const quizReducer = (state, action) =>{
     console.log(state,action);
