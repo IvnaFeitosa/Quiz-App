@@ -3,6 +3,7 @@ import questions from '../assets/data/questions'
 
 const STAGES = [ "Start", "Playing", "End"]
 
+//object
 const initialState = {
     gameStage: STAGES[0],
     questions,
@@ -39,6 +40,9 @@ const quizReducer = (state, action) =>{
                 currentQuestion: nextQuestion,
                 gameStage: endGame? STAGES[2] : state.gameStage,
             }
+        case "NEW_GAME":
+            return initialState
+
         default:
             return state;
     }
