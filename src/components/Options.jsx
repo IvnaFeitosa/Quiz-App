@@ -5,10 +5,10 @@ import { QuizContext } from "../context/quiz";
 
 import './Options.css';
 
-const Options = ({option}) => {
+const Options = ({option, SelectOption, answer}) => {
     const [quizState, dispatch] = useContext(QuizContext);
   return (
-    <div className='option'>
+    <div className='option' onClick={()=> SelectOption()}>
         <p>{option}</p>
     </div>
   )
