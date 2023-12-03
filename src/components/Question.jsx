@@ -28,6 +28,7 @@ const Question = () =>{
                     key={option} 
                     answer ={currentQuestions.answer}
                     SelectOption = {() => onSelectOption(option)}
+                    
                     />
                 ))}
             </div>
